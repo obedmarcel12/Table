@@ -1,17 +1,27 @@
-body{
-    background: cadetblue;
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(src/IMG-20240122-WA0067.jpg);
 }
 
 .container {
   max-width: 800px;
-  margin: 0 auto;
   padding: 20px;
+  margin:0 auto 0;
+  margin-top: 15%;
 }
 
 input[type="text"] {
   width: 100%;
   padding: 10px;
+  font-family: cursive;
+  font-size: 15px;
+  font-weight: 900;
   margin-bottom: 20px;
+}
+
+.container input {
+  width: 97%;
+  outline: none;
 }
 
 table {
@@ -19,15 +29,33 @@ table {
   border-collapse: collapse;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid #ddd;
 }
 
-th, td {
+th,
+td {
   padding: 8px;
   text-align: left;
 }
 
 tr:nth-child(even) {
   background-color: #f2f2f2;
+}
+
+thead tr {
+    color: antiquewhite;
+    font-family: serif;
+    font-weight: 500;
+}
+
+@media screen and (max-width:450px){
+  .container{
+    max-width: 800px;
+    font-weight: 200;
+    font-family: cursive;
+    font-size: small;
+  }
 }
